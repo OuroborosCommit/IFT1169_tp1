@@ -1,0 +1,1 @@
+/*Ce fichier test les configuration du programme */

@@ -1,0 +1,11 @@
+all : grader test 
+
+grader :
+g++ -std=c++11 -Wall -o grader grader.cpp tp1.cpp
+
+tests: 
+g++ -std=c++11 -Wall -o test_csv test_csv.cpp tp1.cpp
+g++ -std=c++11 -Wall -o test_config test_config.cpp tp1.cpp
+g++ -std=c++11 -Wall -o test_param test_param.cpp tp1.cpp
+
+.PHONY grader tests
